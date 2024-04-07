@@ -1,0 +1,50 @@
+.container-fluid 
+{background-color: grey;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 20px;
+}
+
+body {background-color: lightgray;
+margin:15px;
+}
+.flex-container {display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:100px;
+    margin-top:20px;}
+    
+    .flex-item {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        text-align: center;}
+    
+        #time {
+    color:grey;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 200px;
+    margin-left: 0px;
+    }
+    
+    .flex-item2 {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        
+    }
+    strong {padding: 15px;
+    }
+    
+    p {padding: 15px;
+    }
+    header {color: white;}
+
+    .visible {
+        visibility: visible !important;
+      }
+      .invisible {
+        visibility: hidden !important;
+      }
+
+     .visualtoggle {margin-left:1200px;
+padding-top:20px;}

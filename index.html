@@ -1,32 +1,59 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a1e2af8bef.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Avaligraph</title>
 </head>
+
 <header>
+
+<!--Navbar-->
+
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://cdn.discordapp.com/attachments/1123568877637484605/1225479336782729346/Celestial_Spear_Temp_logo_military.png?ex=66214792&is=660ed292&hm=b9a3c1e586b7447f53b6ad41c677cb8b514f6585988d932c977c7bf6cfc416e9&" width="100px" class="d-inline-block">
-           Avaligraph</a>          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Create a post!</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://i.imgur.com/DcoWFZH.png" width="100px" class="d-inline-block">
+           Avaligraph</a>
+           
+<!--Navbar Button-->
+
+<div class="flex-container2">
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Post
+</button>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create Post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Please enter your post:</p>
+        <input type="text">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Post to Nexus</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Dropdown-->
+
+            </li>
+              <li class="btn-group dropstart">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" dropstart>
                     <i class="fa-solid fa-gear"></i>
                 </a>
                 <ul class="dropdown-menu">
@@ -40,20 +67,46 @@
           </div>
         </div>
       </nav>
+
 </header>
+
 <body>
 
-  <div class="visualtoggle"><button type="button" class="btn"><i class="fa-solid fa-list-ul"></i></button><button type="button" class="btn"><i class="fa-solid fa-grip-vertical"></i></button></div>
+<!--View Swich Buttons-->
+
+  <div class="visualtoggle"><button type="button" class="btn" data-bs-target=".d-none" data-bs-toggle=".d-none"><i class="fa-solid fa-list-ul"></i></button><button type="button" class="btn" data-bs-target=".d-print-grid" data-bs-toggle=".dgrid"><i class="fa-solid fa-grip-vertical"></i></button></div>
+  
+  <!--Posts-->
+
+<div class=".d-grid">
   <div class="flex-container">
-    <div class="flex-item"><div><strong>Captain's Photoshoot</strong><div id="time">12/10</div><img src="https://cdn.discordapp.com/attachments/1188132226882338917/1226607395845701682/Portrait_with_thing.png?ex=66256228&is=6612ed28&hm=06f65c238881de4316f856b468552563bfcff09f4c225817b3b096b6f3e53da4&" width="500px"></div><div><p>Renali seems to be doing okay atleast.</p></div></div>
-    <div class="flex-item"><div><strong>Adorable Avali</strong><div id="time">12/9</div><img src="https://cdn.discordapp.com/attachments/1188132226882338917/1218696877252411392/FullbodyComRenali_3.png?ex=66244a69&is=6611d569&hm=378b05a4a6533881bf0586e5dcb5d446ab93c4b2e56a00f43bf71f4ca8f9b52c&" width="500px"></div><div><p>Look, just because theyre wielding a Aerogel blade </br> dosent mean anything.</p></div></div>
-    <div class="flex-item"><div><strong>Asuari of Cera</strong><div id="time">12/7</div><img src="https://cdn.discordapp.com/attachments/1188132226882338917/1218620327039467631/FullbodyComRenali_2.png?ex=6624031e&is=66118e1e&hm=67bc45ccf87323dd034b931fd0b60d4b1403ad4d19afb9fd8f1d00fd91768fd3&" width="500px"></div><div><p>Royal Knight Asuari, dawning the uniform of the </br> mercenary team Starfox.</p></div></div>
-    <div class="flex-item"><div><strong>Scout Squad Deployed</strong><div id="time">12/14</div><img src="https://cdn.discordapp.com/attachments/1188132226882338917/1218619944745308221/Scouts_full_res.png?ex=662402c3&is=66118dc3&hm=88cee9a9abefb6a6e28cb68d805c6e133881a47d7e41d7d245bafefbc721e84b&" width="500px"></div><div><p>Renali, Kunnuro, and Asuari deployed </br> to scout out a destroyed ship.</p></div></div>
+  <ul>
+    <li>    
+    <div class="flex-item"><div><strong>Captain's Photoshoot</strong><div id="time">12/10</div><img src="https://i.imgur.com/3SP7XKJ.png" width="500px"></div><div><p>Renali seems to be doing okay atleast.</p></div></div>
+    </li>
+    
+    <li>
+    <div class="flex-item"><div><strong>Adorable Avali</strong><div id="time">12/9</div><img src="https://i.imgur.com/dAww4wT.png" width="500px"></div><div><p>Look, just because theyre wielding a Aerogel blade </br> dosent mean anything.</p></div></div>
+    </li>
+    
+    <li>
+    <div class="flex-item"><div><strong>Asuari of Cera</strong><div id="time">12/7</div><img src="https://i.imgur.com/JBGkBPw.png" width="500px"></div><div><p>Royal Knight Asuari, dawning the uniform of the </br> mercenary team Starfox.</p></div></div>
+    </li>
+    
+    <li>
+    <div class="flex-item"><div><strong>Scout Squad Deployed</strong><div id="time">12/14</div><img src="https://i.imgur.com/RRGrZ0e.jpg" width="500px"></div><div><p>Renali, Kunnuro, and Asuari deployed </br> to scout out a destroyed ship.</p></div></div>
+    </li>  
+  </ul>
+  </div>
 </div>
+
 </body>
 
+<footer>
 
+<p>Credits: </br> Art was beautifully drawn by HoneyFoxCafe, Heartermobs, and Tattorack. Please, show them some love! </br> Thanks to the Avali Community for being such a big part in my life.</p>
 
+</footer>
 
 
 
